@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="14" time="131.294">
+<testcase classname="F01_register | User could register with valid data" name="User should be able to register with valid username and password" time="9.682">
+<system-out><![CDATA[Given user go to register page..............................................passed
+When user enter a valid data................................................passed
+And user press on register button...........................................passed
+Then user register to the system successfully...............................passed
+And user logout.............................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="F02_login | users could use login functionality to open their accounts" name="user could login with valid email and password" time="6.924">
+<system-out><![CDATA[Given user go to login page.................................................passed
+When user login with valid email and password...............................passed
+And user press on login button..............................................passed
+Then user login to the system successfully..................................passed
+]]></system-out>
+</testcase>
+<testcase classname="F03_resetPassword |User could reset his/her password successfully" name="Success message appear after user reset his/her password" time="8.026">
+<system-out><![CDATA[Given user go to account page...............................................passed
+And user choose change password.............................................passed
+When user enter new password................................................passed
+And user press on change password button....................................passed
+Then user changed password successfully.....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="F04_search | Logged User could search for any product" name="user could search for product using full name" time="5.484">
+<system-out><![CDATA[When user clicks on search field............................................passed
+And user search with name of product........................................passed
+Then user could find relative results.......................................passed
+]]></system-out>
+</testcase>
+<testcase classname="F04_search | Logged User could search for any product" name="user could makes advanced search" time="5.077">
+<system-out><![CDATA[Given user choose advanced search...........................................passed
+When user choose specific category..........................................passed
+Then user choose manufacturer...............................................passed
+And user click on search button.............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="F05_addToWishlist | Logged user could add different products to Wishlist" name="add To Wishlist" time="12.451">
+<system-out><![CDATA[Given user could select a product...........................................passed
+When user can add product to Wishlist.......................................passed
+Then product added to Wishlist successfully.................................passed
+]]></system-out>
+</testcase>
+<testcase classname="F06_filterWithColor | Logged user could filter with color" name="user filter products with specific color" time="5.974">
+<system-out><![CDATA[Given user go to category page..............................................passed
+When user select sub-category...............................................passed
+Then user filter products by color..........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="F07_selectCategories | Logged user could select different Categories" name="Select random category then hover and open sub-Category" time="7.377">
+<system-out><![CDATA[When user enter to category page............................................passed
+Then open sub-category......................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="F08_switchCurrencies | Logged User could switch between currencies" name="User could switch between currencies US-Euro" time="5.468">
+<system-out><![CDATA[When user click on currencies list..........................................passed
+Then user change the currency...............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="F09_selectTags | Logged user could select different tags" name="user could select tags" time="6.189">
+<system-out><![CDATA[Given user navigate to tags page............................................passed
+Then select random tags.....................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="F10_AddToCompareList | Logged user could add different products to compare list" name="AddTo Compare List" time="7.267">
+<system-out><![CDATA[Given user select a product.................................................passed
+When user can add product to compare list...................................passed
+Then product added to compare list successfully.............................passed
+]]></system-out>
+</testcase>
+<testcase classname="F11_addToCart | Logged user could add different products to Shopping cart" name="user add products to cart" time="5.815">
+<system-out><![CDATA[Given user can select a product.............................................passed
+When user can add product to shipping cart..................................passed
+And product added to cart successfully......................................passed
+]]></system-out>
+</testcase>
+<testcase classname="F11_addToCart | Logged user could add different products to Shopping cart" name="user edit shopping cart" time="4.064">
+<failure message="stale element reference: element is not attached to the page document&#10;  (Session info: chrome=100.0.4896.88)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference&#10;Build info: version: '4.1.2', revision: '9a5a329c5a'&#10;System info: host: 'DESKTOP-JPCE9U3', ip: '192.168.1.3', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [5ca42f972c10b83ef5cd02e245505d81, clickElement {id=a85d7e86-e1c4-401e-bbe5-49ed94c35328}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.88, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\TOSHIBA\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:58622}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58622/devtoo..., se:cdpVersion: 100.0.4896.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Element: [[ChromeDriver: chrome on WINDOWS (5ca42f972c10b83ef5cd02e245505d81)] -&gt; css selector: a[href=&quot;/cart&quot;]]&#10;Session ID: 5ca42f972c10b83ef5cd02e245505d81" type="org.openqa.selenium.StaleElementReferenceException"><![CDATA[Given user open shopping cart...............................................failed
+When User can change product quantity in shipping cart......................skipped
+Then User can delete product from shipping cart.............................skipped
+
+StackTrace:
+org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=100.0.4896.88)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'DESKTOP-JPCE9U3', ip: '192.168.1.3', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5ca42f972c10b83ef5cd02e245505d81, clickElement {id=a85d7e86-e1c4-401e-bbe5-49ed94c35328}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.88, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\TOSHIBA\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:58622}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58622/devtoo..., se:cdpVersion: 100.0.4896.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (5ca42f972c10b83ef5cd02e245505d81)] -> css selector: a[href="/cart"]]
+Session ID: 5ca42f972c10b83ef5cd02e245505d81
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at pages.CartPage.open(CartPage.java:25)
+	at com.automation.step_definitions.AddToCart.open_shopping_cart(AddToCart.java:35)
+	at ✽.user open shopping cart(file:///C:/FWD/project_two/src/main/resources/features/F11_addToCart.feature:10)
+]]></failure>
+</testcase>
+<testcase classname="F_12 Create successful Order" name="_2" time="16.638">
+<system-out><![CDATA[Given go to shopping cart...................................................passed
+And accept the terms of service.............................................passed
+When click on check out button..............................................passed
+And Update address information..............................................passed
+Then confirm order..........................................................passed
+And order completed successfully............................................passed
+]]></system-out>
+</testcase>
+</testsuite>
